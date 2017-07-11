@@ -6,7 +6,7 @@ import List from './list';
 import DingzhiButton from './dingzhiButton';
 import DingzhiButtonController from './buttonController';
 import NavController from './navController';
-import FooterController from './FooterController';
+import FooterController from './footerController';
  
 
  

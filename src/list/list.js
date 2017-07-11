@@ -4,11 +4,11 @@ import Product from './product';
 var loop=20;
 var List=React.createClass({
 	getDefaultProps:function(){
-		console.log('getDefaultProps...........');
+		//console.log('getDefaultProps...........');
 		return null;
 	},
 	getInitialState:function(){
-		console.log('getInitialState...........');
+		//console.log('getInitialState...........');
 		var list=[];
 		for(var i=0;i<10;i++){
 			list.push({
@@ -37,30 +37,30 @@ var List=React.createClass({
 	 	
 	},
 	componentWillMount:function(){ 
-		console.log('componentWillMount.............');
+		//console.log('componentWillMount.............');
 	},
 	componentDidMount:function(){
 		this.bindScroll();
-		console.log('componentDidMount.............');
+		//console.log('componentDidMount.............');
 	},
 	componentWillUpdate:function(){
-		console.log('componentWillUpdate.............');
+		//console.log('componentWillUpdate.............');
 	},
 	componentDidUpdate:function(){
-		console.log('componentDidUpdate.............');
+		//console.log('componentDidUpdate.............');
 	},
 	// 在任意时刻组件的props 都可以通过父辈的组件更改，
 	// 当收到新的props 会触发该函数，我们同事获取更改props对象和更行state 的机会
 	componentWillReceiveProps:function(){
-		console.log('componentWillReceiveProps.............');
+		//console.log('componentWillReceiveProps.............');
 	},
 	//该方法用来拦截props 和state ，然后开发这个根据自己的逻辑做出要不要render 的决定让他更快
 	shouldComponentUpdate:function(){
-		console.log('shouldComponentUpdate.............');
+		//console.log('shouldComponentUpdate.............');
 		return true;
 	},
 	componentWillUnmount:function(){
-		console.log('componentWillUnmount.............');
+		//console.log('componentWillUnmount.............');
 	},
 	bindScroll:function(){
 		var self=this;
@@ -83,7 +83,7 @@ var List=React.createClass({
 	render:function(){
 		var self=this;
 		var list;
-		console.log(this.state);
+		//console.log(this.state);
 		if(self.state){
 			list=self.state.list;
 		}else{

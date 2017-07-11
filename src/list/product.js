@@ -16,12 +16,12 @@ var Product=React.createClass({
 		}
 	},
 	componentWillUnmount:function(){ 
-		console.log('product unmount.............');
+		//console.log('product unmount.............');
 	},
 	componentWillReceiveProps:function(){
-		console.log('componentWillReceiveProps.............');
-		console.log(this.props);
-		console.log(arguments);
+		//console.log('componentWillReceiveProps.............');
+		//console.log(this.props);
+		//console.log(arguments);
 	},
 	render:function(){
 		var self=this;

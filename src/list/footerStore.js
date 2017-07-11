@@ -1,24 +1,37 @@
-import React ,{Component} from 'react';
-import $ from 'jquery'
-
-var NavComponent = React.createClass({
-	handClick:function(){
-
-	},
-	getInitialState:function(){
-		return {};
-	},
-	render:function(){
-		return (<div className="dz_fixetop" >
-                    <div className="dzs_link01">
-                        <span className="icon_dzs"></span>
-                        <div className="text">
-                            <p className="title">挑选定制师</p>
-                            我们的王牌都在这里，等您来翻牌
-                        </div>
-                        <span className="icon_link"></span>
-                    </div>
-                </div>);
-	}
+var EventEmitter=require("events").EventEmitter;
+var assign=require('object-assign');
+var footerStore=assign({},EventEmitter.prototype,{
+    state:{
+        show:false
+    },
+    getState:function(){
+        var self=this;
+        return self.state;
+    },
+    showTag:function(){
+        this.state.show=true;
+    },
+    hideTag:function(){
+        this.state.show=false;
+    },
+    emitShowTag:function(){
+        this.emit("footerShowTag");
+    },
+    emitHideTag:function(){
+        this.emit("footerHideTag");
+    },
+    addShowTagListener:function(callback){
+        this.on("footerShowTag",callback);
+    },
+    removeShowTagListener:function(){
+        this.removeListener("footerShowTag");
+    },
+    addHideTagListener:function(callback){
+        this.on("footerHideTag",callback);
+    },
+    removeHideTagListener:function(){
+        this.removeListener("footerHideTag");
+    }
 });
-export default NavComponent;
+export default footerStore;
+
