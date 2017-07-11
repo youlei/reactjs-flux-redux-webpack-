@@ -8,6 +8,8 @@ import DingzhiButtonController from './buttonController';
 import NavController from './navController';
 import FooterController from './FooterController';
  
+
+ 
 ReactDom.render(
 	<NavController />,
 	$("#nav")[0]
