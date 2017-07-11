@@ -1,0 +1,1 @@
+webpackJsonp([0],[function(i,n){n.convertChar2Bits=function(){console.log("this is convert char 2 bits")}},function(i,n){i.exports=function(){this.id,this.name,this.address,this.gender,this.loginName,this.password}},function(i,n,s){s(0),s(1)}],[2]);

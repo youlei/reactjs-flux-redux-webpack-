@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://m.ctrip.com/webapp/dingzhi/v2_index?from=index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>定制旅行</title>
+    
+    <meta name="description" content="定制旅行">
+    <meta name="keywords" content="定制旅行"> 
+   
+    <link rel="stylesheet" type="text/css" id="mainCss" href="./resource/main.css"> 
+<body onselectstart="return false"> 
+    <div id="main">
+        <div class="main-frame">
+            <div class="main-viewport">
+ 
+	
+	
+	<div id="client_id_viewport_1_1497926113241" page-url="/webapp/dingzhi/demand?from=http://m.ctrip.com/webapp/dingzhi/recommendList?from=v2_index" data-view-name="demand"><style>
+        .disabledServerRequire {
+            border-color: #eee;
+            color: #bbb !important;
+        }
+    </style>
+    <div class="mod_body">
+        <div class="dz_v_mod">
+            <h2 class="contact_title">基本信息<span></span></h2>
+            <ul class="v_list">
+                <li class="v_contact_list">
+                    <ul class="v_contact_content">
+
+                        <li class="" id="travelNatureLi">
+                            <h3 class="v_contact_hd " style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;" id="">出游性质</h3>
+                            <div class="v_contact_input">
+                                <p class="sel_tab sel_tab01">
+                                    <a href="javascript:void(0);" data-type="P" name="travelNature" style="height: 30px;line-height: 30px;" class="">个人定制</a>
+                                    <a href="javascript:void(0);" data-type="C" name="travelNature" style="height: 30px;line-height: 30px;" class="">公司定制</a>
+                                </p>
+                            </div>
+                            <p class="v_error_tips" id="travelNatureError" style="display: none; margin: 0px auto auto 95px;">出游性质不能为空</p>
+                        </li>
+                        <li class="v_arrow_r" id="destinationLi">
+                            <h3 class="v_contact_hd " style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">目的地</h3>
+                            <div class="v_contact_input" id="destinationDiv"><span id="destination"></span></div>
+                            <p id="taiWanOpenCity" style="line-height: 1.1; padding-bottom: 12px; display: none;"><a href="https://vacations.ctrip.com/notes/1322.html" class="tips01" target="_blank"><i class="mod_hd_b dlpr"></i>台湾个人游开发城市[点击了解]</a></p>
+                            <p class="v_error_tips" id="destinationError" style="display:none">目的地不能为空</p>
+                        </li>
+                        <li class="v_arrow_r" id="startCityLi">
+                            <h3 class="v_contact_hd" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">出发地</h3>
+                            <div class="v_contact_input"><span id="departure">上海</span></div>
+                            <p class="v_error_tips" style="display:none" id="departureError">出发地不能为空</p>
+                        </li>
+                        <li class="filiation_des" id="destinationRelationshipLi" style="display: none;">
+                            <h3 class="v_contact_hd " style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei" ,hei;="" id="">目的地关系</h3>
+                            <div class="v_contact_input">
+                                <p class="sel_tab sel_tab01">
+                                    <a href="javascript:void(0);" data-type="0" name="destinationRelationship" style="height: 30px;line-height: 30px;" class="">我都要去</a>
+                                    <a href="javascript:void(0);" data-type="1" name="destinationRelationship" style="height: 30px;line-height: 30px;" class="">选去其中一个</a>
+                                </p>
+                            </div>
+                            <p id="destinationRelationshipError" class="v_error_tips error_padding_top" style="margin: 0px auto -5px 95px;display:none">请选择目的地关系</p>
+                        </li>
+                        
+                        <li class="" id="visaLi" style="display: none;">
+                            <h3 class="v_contact_hd " style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei" ,hei;="" id="">签证</h3>
+                            <div class="v_contact_input">
+                                <p class="sel_tab sel_tab01">
+                                    <a href="javascript:void(0);" data-type="0" name="visa" style="height: 30px;line-height: 30px;width:50%" class="">未办理</a>
+                                    <a href="javascript:void(0);" data-type="1" name="visa" style="height: 30px; line-height: 30px; width:50%" class="">已办理</a>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="item bd_gray_btm" id="dateLi">
+                            <div class="v_order_item">
+                                <h3 class="v_order_item_hd" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;line-height: 40px;">往返日期</h3>
+                                <div class="v_order_item_bd more_line" id="startDateDiv" style="line-height: 2.5; color: gray;">请选择日期</div>
+                            </div>
+
+                            <p class="v_error_tips error_padding" id="startDateError" style="display:none">请选择往返日期</p>
+
+                        </li>
+                        <li class="v_coupon_choice " id="maxJourneyDayLi">
+                            <!--<h3 class="v_list_hd" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">游玩天数</h3>-->
+                            <div class="v_list_bd">
+                                <div class="v_contact_input">
+                                    <!--<p class="inp_num float_left">
+                                        <input type="tel" class="v_input_text" id="maxJourneyDay" min="1" placeholder="天">
+                                        <span id="maxJourneyDayTip">天</span>
+                                    </p>-->
+                                    <span class="label_item" id="isAdjust">可适当增减天数</span>
+                                </div>
+
+                            </div>
+                            <p class="cheap_tips v_error_tips" id="maxJourneyDayError" style="display:none">游玩天数不能为空</p>
+                        </li>
+                        <li class="item bd_gray_btm" id="adultNumLi">
+                            <div class="v_order_item">
+                                <h3 class="v_order_item_hd" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">出行人数</h3>
+                                <div class="v_order_item_bd gray">
+                                    <div class="v_contact_input">
+                                        <p class="inp_num" style="position:relative">
+                                            <input type="tel" class="v_input_text" placeholder="成人" min="3" id="adultNum" style="width: 100%; position: absolute; z-index: 2;"><span id="adultNumTip" style="position: absolute; z-index: 1; right: 15px; visibility: hidden;">成人</span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="v_order_item_bd bd_gray_left gray">
+                                    <div class="v_contact_input">
+                                        <p class="inp_num" style="position:relative">
+                                            <input type="tel" class="v_input_text" id="childNum" placeholder="儿童" style="width: 100%; position: absolute; z-index: 2;"><span id="childNumTip" style="position: absolute; z-index: 1; right: 15px; visibility: hidden;">儿童</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="v_error_tips error_padding" style="display:none" id="adultNumError">出行人数不能为空</p>
+                        </li>
+                        <li id="budgetLi">
+                            <h3 class="v_contact_hd" id="" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">人均预算</h3>
+                            <div class="v_list_bd">
+                                <div class="v_order_item_bd gray">
+                                    <div class="v_contact_input">
+                                        <p class="inp_num">
+                                            <input type="tel" class="v_input_text" placeholder="元" id="budget" style="width: 100%; position: absolute;z-index:2" maxlength="12">
+                                            <span id="budgetTip" style="position: absolute; right: 15px; visibility: hidden;">元</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="v_error_tips error_padding" style="display:none" id="budgetError">人均预算不能为空</p>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        
+        <div class="dz_v_mod ">
+            <h2 class="contact_title">定制师</h2>
+            <ul class="v_theme_list">
+                <li id="quotationTypeLi" style="display: block;">
+                    <h3 id="needMany">最多几位定制师提供方案<i class="w_ico2"></i></h3>
+                    <div class="theme_con theme_con01">
+                        <a href="javascript:void(0);" name="quotationType" data-type="10"><span class="cityname">1位</span></a>
+                        <a href="javascript:void(0);" name="quotationType" data-type="20" class="cur"><span class="cityname">2位</span></a>
+                        <a href="javascript:void(0);" name="quotationType" data-type="1"><span class="cityname">3位</span></a>
+                        <a data-type="2" name="quotationType" style="display:none" href="javascript:void(0);" id="selfSupport"><span class="cityname">优先自营（仅1位）</span></a>
+                    </div>
+                    <p id="quotationTypeError" class="v_error_tips error_padding_top" style="display:none">请选择需要几位定制师提供方案</p>
+                </li>
+                <li id="serverRequireLi" style="display: block;">
+                    <h3 id="needWhat">需要提供什么？（选填，多选）</h3>
+                    <div class="theme_con theme_con01" id="serverRequireList" data-type="">
+                        
+                    <a href="#" class="" name="serverRequire" data-type="1" data-traveltype="P" data-priority="0" data-isselected="undefined" style=""><span class="cityname">线路设计</span></a><a href="#" class="" name="serverRequire" data-type="2" data-traveltype="P" data-priority="1" data-isselected="undefined" style=""><span class="cityname">机票</span></a><a href="#" class="" name="serverRequire" data-type="3" data-traveltype="P" data-priority="2" data-isselected="undefined" style=""><span class="cityname">用车</span></a><a href="#" class="" name="serverRequire" data-type="4" data-traveltype="P" data-priority="3" data-isselected="undefined" style=""><span class="cityname">导游</span></a><a href="#" class="" name="serverRequire" data-type="5" data-traveltype="P" data-priority="4" data-isselected="undefined" style=""><span class="cityname">酒店</span></a><a href="#" class="" name="serverRequire" data-type="6" data-traveltype="P" data-priority="5" data-isselected="undefined" style=""><span class="cityname">签证</span></a><a href="#" class="" name="serverRequire" data-type="7" data-traveltype="P" data-priority="6" data-isselected="undefined" style=""><span class="cityname">门票</span></a><a href="#" class="" name="serverRequire" data-type="8" data-traveltype="P" data-priority="7" data-isselected="undefined" style=""><span class="cityname">用餐</span></a><a href="#" class="" name="serverRequire" data-type="9" data-traveltype="C" data-priority="8" data-isselected="undefined" style="display: none;"><span class="cityname">团建拓展</span></a><a href="#" class="" name="serverRequire" data-type="10" data-traveltype="C" data-priority="9" data-isselected="undefined" style="display: none;"><span class="cityname">奖励旅游</span></a><a href="#" class="" name="serverRequire" data-type="11" data-traveltype="C" data-priority="10" data-isselected="undefined" style="display: none;"><span class="cityname">会议会务</span></a><a href="#" class="" name="serverRequire" data-type="12" data-traveltype="C" data-priority="11" data-isselected="undefined" style="display: none;"><span class="cityname">商务考察</span></a><a href="#" class="" name="serverRequire" data-type="13" data-traveltype="C" data-priority="12" data-isselected="undefined" style="display: none;"><span class="cityname">企业年会</span></a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dz_v_mod features">
+            <h2 class="contact_title">特色定制<span class="ts_txt">（选填）</span></h2>
+            <ul class="v_theme_list" id="specialCustom">
+                <li id="hotelStarsLi" style="display: block;">
+                    <h3>酒店星级<span>(多选)</span></h3>
+                    <div class="theme_con theme_con01">
+                        <a href="javascript:void(0);" name="hotelStars" data-type="4"><span class="cityname">三星/舒适</span></a>
+                        <a href="javascript:void(0);" name="hotelStars" data-type="8"><span class="cityname">四星/高档</span></a>
+                        <a href="javascript:void(0);" name="hotelStars" data-type="16"><span class="cityname">五星/豪华</span></a>
+                        <a href="javascript:void(0);" name="hotelStars" data-type="32"><span class="cityname">连锁</span></a>
+                        <a href="javascript:void(0);" name="hotelStars" data-type="1"><span class="cityname">特色客栈</span></a>
+                        <a href="javascript:void(0);" name="hotelStars" data-type="0"><span class="cityname">不限</span></a>
+                    </div>
+                </li>
+                <li id="citynameLi" style="display: block;">
+                    <h3>用餐要求</h3>
+                    <div class="theme_con theme_con01">
+                        <a href="javascript:void(0);" name="eatRequire" data-type="1"><span class="cityname">当地特色</span></a>
+                        <a href="javascript:void(0);" name="eatRequire" data-type="2"><span class="cityname">定制师推荐</span></a>
+                        <a href="javascript:void(0);" name="eatRequire" data-type="0"><span class="cityname">自理</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dz_v_mod my_need">
+            <h2 class="contact_title">其他需求</h2>
+            <div class="v_demand">
+                <textarea class="v_textarea nofastclick" maxlength="1000" id="otherRequirement" style="width: 100%;color:black" placeholder="选填，请输入其他需求，如：希望定制师何时联系您，房间数，导游要求等"></textarea>
+            </div>
+        </div>
+
+        <div class="dz_v_mod">
+            <h2 class="contact_title">联系人信息<span></span></h2>
+            <ul class="v_list">
+                <li class="v_contact_list">
+                    <ul class="v_contact_content" id="contactTitle">
+                        <li id="contactNameLi">
+                            <h3 class="v_contact_hd" id="">姓名</h3>
+                            <div class="v_contact_input">
+                                <input type="text" class="v_input_text nofastclick" maxlength="20" id="contactName">
+                                <p class="v_error_tips" style="display:none">姓名不能为空</p>
+                            </div>
+                        </li>
+                        <li id="contactPhoneLi">
+                            <h3 class="v_contact_hd" id="">手机号码</h3>
+                            <div class="v_contact_input">
+                                <input type="text" class="v_input_text nofastclick" id="contactPhone" maxlength="20" placeholder="请输入11位手机号码">
+                                <p class="v_error_tips" style="display:none">请输入正确的手机号码</p>
+                            </div>
+                        </li>
+                        <li id="contactEmailLi">
+                            <h3 class="v_contact_hd">电子邮箱</h3>
+                            <div class="v_contact_input">
+                                <input type="text" class="v_input_text nofastclick" id="contactEmail" maxlength="100" placeholder="">
+                                <p class="v_error_tips" style="display:none">请输入正确的邮箱</p>
+                            </div>
+                        </li>
+                        <li id="companyNameLi" style="display:none">
+                            <h3 class="v_contact_hd" style="font: normal 15px/40px Arial,Lucida Grande,Verdana,Microsoft YaHei,hei;">公司名称</h3>
+                            <div class="v_contact_input">
+                                <input type="text" class="v_input_text nofastclick" id="companyName" maxlength="100">
+                                <p class="v_error_tips" style="display:none">公司名称不能为空</p>
+                            </div>
+                        </li>
+                        <li id="weChatLi">
+                            <h3 class="v_contact_hd">微信号</h3>
+                            <div class="v_contact_input">
+                                <input type="text" class="v_input_text nofastclick" id="weiXin" maxlength="100" placeholder="选填">
+                                <p class="v_error_tips" style="display:none">请输入正确的微信号</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <footer class="mod_foot_acitons mod_foot_actions01">
+        <a href="javascript:void(0);" class="btn_link" id="submitOrder">提交</a>
+    </footer>
+
+
+    <div class="dz_pop" style="z-index: 2000; display: none;" id="needManyTips">
+        <div class="pop_con">
+            <p class="tit">需要几位定制师提供方案?</p>
+            <p>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;定制师系携程或第三方供应商委派为您提供服务<br>
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;您可以选择多位定制师为您提供方案和报价，该情况下会有多位定制师同时与您联系，了解您的详细需求。<br>
+
+                &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;最终将由您选择的最满意定制师为您提供服务。
+            </p>
+        </div>
+        <span class="clased_btn" id=""></span>
+    </div>
+    <div class="cust_mask dz_pop cust_mask01" id="threePriceMask" style="z-index:2000;display:none;">
+        <div class="mask_lay cur"></div>
+        <div class="mask_con mask_con02">
+            <div class="frame_tips01"></div>
+            <div class="border_tips01">
+                <div class="bg">
+                    <div class="text_type01">
+                        <h2 class="contact_title" style="padding:5px 0 0 15px;">定制师</h2>
+                        <ul class="v_theme_list">
+                            <li style="display: block;">
+                                <h3>最多几位提供方案</h3>
+                                <div class="theme_con theme_con01">
+                                    <a href="#" class="cur"><span class="cityname">1位</span></a><a href="#"><span class="cityname">2位</span></a><a href="#"><span class="cityname">3位</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p style="padding:50px 100px 0;"><a href="" class="frame_btn01">我知道了</a></p>
+        </div>
+    </div></div>
+         
+        </div>
+    </div>
+    </div>
+
+    
+    <link rel="stylesheet" type="text/css" href="./resource/dz.css">
+	<link rel="stylesheet" type="text/css" href="./resource/flop.css">
+	<link rel="stylesheet" type="text/css" href="./resource/requirement.css">
+    </body></html>
