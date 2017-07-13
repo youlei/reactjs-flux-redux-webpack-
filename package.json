@@ -35,6 +35,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-transform-hmr": "^1.0.4",
+    "redux": "^3.7.2",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^2.6.1",

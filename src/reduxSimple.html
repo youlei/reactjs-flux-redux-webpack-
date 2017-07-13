@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://cdn.bootcss.com/redux/3.5.2/redux.min.js"></script>
+</head>
+<script>
+	function inc(){
+		return {
+			type:"INC"
+		};
+	}
+	function dec(){
+		return {
+			type:"DEC"
+		};
+	}
+	function reducer(state,action){
+		var  state=state||{count:0};
+		switch(action.type){
+			case "INC":
+				return {count:state.count+1};
+			case "DEC":
+				return {count:state.count-1};
+			default:
+				return state;
+		}
+		
+	}
+	function otherReducer(state,action){
+		switch(action.type){
+			case "MULTI":
+
+				return {count:state.count*2};
+			case "DIVI":
+				return {count:state/2};
+			default:
+				return state;
+		}
+	}
+	function printStateMiddleware(middlewareAPI){
+		return function(dispatch){
+			return function(action){
+				console.log('dispatch 前：'+middlewareAPI.getState());
+				var returnVal=dispatch(action);
+				console.log('dispatch 后台：'+middlewareAPI.getState());
+				return returnVal;	
+			}
+			
+		}
+	}
+	var enhancedCreate=Redux.applyMiddleware(printStateMiddleware)(Redux.createStore);
+
+	//var store= Redux.createStore(reducer);
+	var store=enhancedCreate(reducer);
+	store.subscribe(function(){
+
+		console.log('state has change ...');
+	});
+	store.dispatch(inc());
+	console.log(store.getState());
+
+	store.dispatch(inc());
+	console.log(store.getState());
+
+	store.dispatch(dec());
+	console.log(store.getState());
+
+</script>
+<body>
+
+
+
+</body>
+</html>

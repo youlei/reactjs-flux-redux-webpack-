@@ -65,13 +65,22 @@ var productListTemplate=new HtmlWebpackPlugin({
     inject:false,
     filename:'productList.html'
 });
+
+
+var reduxDemoTemplate=new HtmlWebpackPlugin({
+    file:'reduxDemo.html',
+    template:'./src/reduxDemo.template.html',
+    inject:false,
+    filename:'reduxDemo.html'
+});
+
 var path = require('path');
 
 module.exports = {
 	devtool:'eval-source-map',//18
     //devtool:'source-map', 25s
     //插件项
-    plugins: [commonsPlugin,bannerPlugin,hotModulePlugin , indexTemplate,htmlTemplate,productListTemplate,extractTextPlugin],
+    plugins: [commonsPlugin,bannerPlugin,hotModulePlugin , indexTemplate,htmlTemplate,productListTemplate,extractTextPlugin,reduxDemoTemplate],
     //页面入口文件配置
     /**
     entry: {
@@ -80,14 +89,14 @@ module.exports = {
     },
     */
     entry:{
-        //app:['webpack-dev-server/client?http://127.0.0.1:8080', 'webpack/hot/dev-server', './src/main.js'],
+        /**
         //component1:["react","react-dom"],
         //otherIndex:'./src/app.js',
         //reactComponent:["react","react-dom"],
-        index:"./src/index",
-        list:'./src/list/productList',
-        //module1:'./src/module1',
-        //module2:'./src/module2',
+        */
+        //index:"./src/index",
+        //list:'./src/list/productList',
+        reduxIndex:'./src/reduxDemo/index',
         jquery:'jquery',
         react:"react",
         'react-dom':'react-dom'

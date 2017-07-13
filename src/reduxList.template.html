@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://m.ctrip.com/webapp/dingzhi/v2_index?from=index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>定制旅行</title>
+     <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var css in htmlWebpackPlugin.files.css) { %>
+    <link href="<%=htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+    <% } %>
+
+<body onselectstart="return false"> 
+    <div id="main">
+        <div class="main-frame">
+            <div class="main-viewport">
+ 
+	
+	
+	<div id="client_id_viewport_1_1497925925064" page-url="/webapp/dingzhi/recommendList?from=v2_index" data-view-name="recommendList"><div class="body nofoot" id="recommendListBody">
+        <div class="body nofoot index_body">
+
+            <div class="rec_cont rec_cont_b">
+                <div id='nav'>
+
+                </div>
+                
+                <div id="list" style="margin-top: 53px;">
+
+                   
+                </div>
+            </div>
+
+            <div id='footer'>
+            </div>
+
+           
+
+ 
+
+            <div class="logo_loading" id="loading" style="display:none;padding-bottom:66px"><i></i>玩命加载中...</div>
+            <p class="grab_tips01" id="noMore" style="display:none;padding-bottom:66px;">没有更多了</p>
+            <p class="grab_tips01" id="noData" style="padding-top: 166px; display: none;">没有数据</p>
+            <div class="warp_z" style="z-index: 100; display: none;" id="filterMask"></div>
+        </div>
+    </div>
+        <div id="dingzhiButton">
+         
+        </div>
+       
+    </div>
+         
+        </div>
+    </div>
+    </div>
+
+     
+     <%  
+        for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+        <script type="text/javascript" src="./<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
+    <% } %>
+   
+    </body></html>
