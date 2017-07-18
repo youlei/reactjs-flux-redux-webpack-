@@ -6,14 +6,21 @@ var counter=function(state={count:0},action){
 			return assign({},state,{count:count+1});
 		case 'LOADDATA':
 			var tmp=state.result||[];
-			for(var i=0;i<2;i++){
+			var start=tmp.length;
+			var length=tmp.length+2;
+			for(var i=start;i<length;i++){
 				var p={
 					id:i,
 					name:'name_'+i
 				};
 				tmp.push(p);
 			}
-			return assign({},state,{result:tmp,count:state.count});
+			return assign({},state,{result:tmp,count:state.count,set:tmp});
+		case "ASYNCBT":
+			console.log("state async load.................");
+			console.log(action);
+			var newResult=assign({},state,{result:action.playload.data});
+			return newResult;
 		default:
 			return state;
 	}

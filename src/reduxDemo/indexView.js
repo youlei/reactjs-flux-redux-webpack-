@@ -6,16 +6,18 @@ var IndexView=React.createClass({
 		var value=this.props.value;
 		var onIncreaseClick=this.props.onIncreaseClick;
 		var onLoadData=this.props.onLoadData;
-		var data=this.props.result||[];
+		var onAsyncBt=this.props.onAsyncBt;
+		var data=this.props.set||[];
 		return(<div>
 			<span>{value}</span>
 			{
 				data.map(function(p){
-					return <div><span>{p.id}</span><span>{p.name}</span></div>
+					return <div key={p.id}><span>{p.id}</span><span>{p.name}</span></div>
 				})
 			}
 			<button onClick={onLoadData}> loadData </button>
 			<button onClick={onIncreaseClick}>increaseBt</button>
+			<button onClick={onAsyncBt.bind(this,{product:'xxttoo',pid:1001})}>asyncBt</button>
 			</div>);
 	}
 });

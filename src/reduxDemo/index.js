@@ -9,3 +9,16 @@ ReactDOM.render(
  	</Provider>,
  	document.getElementById('root')
  	);
+
+/**
+function* generatorFun(){
+	yield 'hello';
+	yield 'world';
+	return 'xxx';
+}
+
+var result= generatorFun();
+console.log( result.next());
+console.log( result.next());
+console.log( result.next());
+*/
